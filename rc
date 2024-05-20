@@ -1,0 +1,5 @@
+REPO="https://raw.githubusercontent.com/main-main28/main-main28/main/"
+
+
+
+wget -O /root/.config/rclone/rclone.conf "${REPO}limit/rclone.conf"
