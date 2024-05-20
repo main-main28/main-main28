@@ -902,7 +902,7 @@ if [ "$BASH" ]; then
     fi
 fi
 mesg n || true
-menu
+menus
 EOF
 
 cat >/etc/cron.d/xp_all <<-END
