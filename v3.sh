@@ -34,12 +34,12 @@ clear && clear && clear
 clear;clear;clear
 
 # // Banner
-echo -e "${YELLOW}----------------------------------------------------------${NC}"
+echo -e "${BLUE}----------------------------------------------------------${NC}"
 echo -e "  Welcome To ADIJAYA Tunneling ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "  Author : ${green}╭────────────SADIJAYA STORE®────────────╮${NC}${YELLOW}(${NC} ${green} SANAK STORE Tunneling ${NC}${YELLOW})${NC}"
-echo -e " © Recode By My Self ADIJAYA STORE Tunneling${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
-echo -e "${YELLOW}----------------------------------------------------------${NC}"
+echo -e "  Author : ${BLUE}╭────────────SADIJAYA STORE®────────────╮${NC}"
+echo -e " © Recode By My Self ADIJAYA STORE Tunneling${YELLOW}(${NC} 2024 ${YELLOW})${NC}"
+echo -e "${BLUE}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
 ###### IZIN SC 
@@ -145,9 +145,9 @@ function print_ok() {
     echo -e "${OK} ${BLUE} $1 ${FONT}"
 }
 function print_install() {
-	echo -e "${green} =============================== ${FONT}"
+	echo -e "${BLUE} =============================== ${FONT}"
     echo -e "${YELLOW} # $1 ${FONT}"
-	echo -e "${green} =============================== ${FONT}"
+	echo -e "${BLUE} =============================== ${FONT}"
     sleep 1
 }
 
@@ -157,9 +157,9 @@ function print_error() {
 
 function print_success() {
     if [[ 0 -eq $? ]]; then
-		echo -e "${green} =============================== ${FONT}"
+		echo -e "${BLUE} =============================== ${FONT}"
         echo -e "${Green} # $1 berhasil dipasang"
-		echo -e "${green} =============================== ${FONT}"
+		echo -e "${BLUE} =============================== ${FONT}"
         sleep 2
     fi
 }
@@ -902,7 +902,7 @@ if [ "$BASH" ]; then
     fi
 fi
 mesg n || true
-menus
+menu
 EOF
 
 cat >/etc/cron.d/xp_all <<-END
@@ -1036,34 +1036,34 @@ sudo hostnamectl set-hostname $username
 echo -e "${green} Script Successfully Installed"
 echo ""
 # Menyisipkan kode PORT SERVICE INFO di sini
-echo -e "\033[0;32m ┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[36m ┌──────────────────────────────────────────┐\033[0m"
 echo -e "\033[0;32m │\033[0m            \033[0;36mPORT SERVICE INFO\033[0m             \033[0;32m|\033[0m"
-echo -e "\033[0;32m └──────────────────────────────────────────┘\033[0m"
-echo -e "\033[0;32m┌─────────────────────────────────────────────┐"
-echo -e "\033[0;32m│       >>> Service & Port                    │"
-echo -e "\033[0;32m│   - Open SSH                : 443, 80, 22   │"
-echo -e "\033[0;32m│   - Dropbear                : 443, 109, 143 │"
-echo -e "\033[0;32m│   - Dropbear Websocket      : 443, 109      │"
-echo -e "\033[0;32m│   - SSH Websocket SSL       : 443           │"
-echo -e "\033[0;32m│   - SSH Websocket           : 80            │"
-echo -e "\033[0;32m│   - OpenVPN SSL             : 443           │"
-echo -e "\033[0;32m│   - OpenVPN Websocket SSL   : 443           │"
-echo -e "\033[0;32m│   - OpenVPN TCP             : 443, 1194     │"
-echo -e "\033[0;32m│   - OpenVPN UDP             : 2200          │"
-echo -e "\033[0;32m│   - Nginx Webserver         : 443, 80, 81   │"
-echo -e "\033[0;32m│   - Haproxy Loadbalancer    : 443, 80       │"
-echo -e "\033[0;32m│   - XRAY Vmess TLS          : 443           │"
-echo -e "\033[0;32m│   - XRAY Vmess gRPC         : 443           │"
-echo -e "\033[0;32m│   - XRAY Vmess None TLS     : 80            │"
-echo -e "\033[0;32m│   - XRAY Vless TLS          : 443           │"
-echo -e "\033[0;32m│   - XRAY Vless gRPC         : 443           │"
-echo -e "\033[0;32m│   - XRAY Vless None TLS     : 80            │"
-echo -e "\033[0;32m│   - Trojan gRPC             : 443           │"
-echo -e "\033[0;32m│   - Trojan WS               : 443           │"
-echo -e "\033[0;32m│   - BadVPN 1                : 7100          │"
-echo -e "\033[0;32m│   - BadVPN 2                : 7200          │"
-echo -e "\033[0;32m│   - BadVPN 3                : 7300          │"
-echo -e "\033[0;32m└─────────────────────────────────────────────┘"
+echo -e "\033[36m └──────────────────────────────────────────┘\033[0m"
+echo -e "\033[36m┌─────────────────────────────────────────────┐"
+echo -e "\033[36m│       >>> Service & Port                    │"
+echo -e "\033[36m│   - Open SSH                : 443, 80, 22   │"
+echo -e "\033[36m│   - Dropbear                : 443, 109, 143 │"
+echo -e "\033[36m│   - Dropbear Websocket      : 443, 109      │"
+echo -e "\033[36m│   - SSH Websocket SSL       : 443           │"
+echo -e "\033[36m│   - SSH Websocket           : 80            │"
+echo -e "\033[36m│   - OpenVPN SSL             : 443           │"
+echo -e "\033[36m│   - OpenVPN Websocket SSL   : 443           │"
+echo -e "\033[36m│   - OpenVPN TCP             : 443, 1194     │"
+echo -e "\033[36m│   - OpenVPN UDP             : 2200          │"
+echo -e "\033[36m│   - Nginx Webserver         : 443, 80, 81   │"
+echo -e "\033[36m│   - Haproxy Loadbalancer    : 443, 80       │"
+echo -e "\033[36m│   - XRAY Vmess TLS          : 443           │"
+echo -e "\033[36m│   - XRAY Vmess gRPC         : 443           │"
+echo -e "\033[36m│   - XRAY Vmess None TLS     : 80            │"
+echo -e "\033[36m│   - XRAY Vless TLS          : 443           │"
+echo -e "\033[36m│   - XRAY Vless gRPC         : 443           │"
+echo -e "\033[36m│   - XRAY Vless None TLS     : 80            │"
+echo -e "\033[36m│   - Trojan gRPC             : 443           │"
+echo -e "\033[36m│   - Trojan WS               : 443           │"
+echo -e "\033[36m│   - BadVPN 1                : 7100          │"
+echo -e "\033[36m│   - BadVPN 2                : 7200          │"
+echo -e "\033[36m│   - BadVPN 3                : 7300          │"
+echo -e "\033[36m└─────────────────────────────────────────────┘"
 echo ""
 read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} For Reboot") "
 reboot
