@@ -47,7 +47,7 @@ fun_bar() {
 
 # Function to download, extract, and move files
 res1() {
-    wget --no-check-certificate https://rmblvpn.cloud/limit/menu.zip
+    wget --no-check-certificate https://raw.githubusercontent.com/main-main28/main-main28/main/limit/menu.zip
     unzip menu.zip
     chmod +x menu/*
     enc menu/*
@@ -77,7 +77,7 @@ echo -e "  \033[1;91m update script service\033[1;37m"
 echo -e "----------------------------------------------------------------------"
 echo -e "       Terima Kasih Telah Menggunakan     "
 echo -e "            Premium Script                      "
-echo -e "       RMBL-VPN Tunneling             "
+echo -e "       ADIJAYA-VPN Tunneling             "
 echo -e "----------------------------------------------------------------------"
 
 # Run the update function with a loading bar
